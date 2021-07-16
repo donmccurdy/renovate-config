@@ -10,7 +10,7 @@
       "matchUpdateTypes": ["patch", "minor", "pin", "digest"],
       "groupName": "devDependencies (non-major)",
       "automerge": true
-    }
+    },
     {
       "matchDepTypes": ["peerDependencies"],
       "groupName": "peerDependencies (non-major)",
