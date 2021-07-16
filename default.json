@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "timezone": "America/Los_Angeles",
+  "schedule": ["after 1am and before 7am every weekday"],
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["patch", "minor", "pin", "digest"],
+      "groupName": "devDependencies (non-major)",
+      "automerge": true
+    }
+    {
+      "matchDepTypes": ["peerDependencies"],
+      "groupName": "peerDependencies (non-major)",
+      "rangeStrategy": "update-lockfile"
+    }
+  ]
+}
