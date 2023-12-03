@@ -17,5 +17,8 @@
       "groupName": "peerDependencies (non-major)",
       "rangeStrategy": "update-lockfile"
     }
-  ]
+  ],
+  "nvm": {
+    "enabled": false
+  }
 }
