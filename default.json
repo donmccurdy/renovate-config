@@ -17,11 +17,11 @@
       "groupName": "peerDependencies (non-major)",
       "rangeStrategy": "update-lockfile"
     },
-		{
+	  {
 			"description": "Missing v9 support in typescript-eslint: https://github.com/typescript-eslint/typescript-eslint/issues/8211",
 			"matchPackageNames": ["eslint", "typescript-eslint", "@eslint/js", "eslint-config-prettier", "eslint-plugin-svelte"],
 			"enabled": false
-		}
+	  }
   ],
   "nvm": {
     "enabled": false
