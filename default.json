@@ -23,6 +23,10 @@
       "enabled": false
     }
   ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
   "nvm": {
     "enabled": false
   }
