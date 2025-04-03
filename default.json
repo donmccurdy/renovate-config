@@ -7,6 +7,12 @@
   "schedule": ["* * 1 * *"],
   "packageRules": [
     {
+      "matchDepTypes": ["packageManager"],
+      "matchUpdateTypes": ["patch", "minor", "pin", "digest"],
+      "groupName": "packageManager (non-major)",
+      "automerge": true
+    },
+    {
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["patch", "minor", "pin", "digest"],
       "groupName": "devDependencies (non-major)",
@@ -14,7 +20,7 @@
     },
     {
       "matchDepTypes": ["peerDependencies"],
-      "groupName": "peerDependencies (non-major)",
+      "groupName": "peerDependencies",
       "rangeStrategy": "update-lockfile"
     },
     {
