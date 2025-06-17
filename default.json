@@ -4,7 +4,7 @@
     ":disableDependencyDashboard"
   ],
   "timezone": "America/Los_Angeles",
-  "schedule": ["* * 1 * *"],
+  "schedule": ["* * 1 */3 *"],
   "packageRules": [
     {
       "matchDepTypes": ["packageManager"],
