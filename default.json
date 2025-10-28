@@ -1,5 +1,4 @@
 {
-  "enabled": false,
   "extends": [
     "config:base",
     ":disableDependencyDashboard"
@@ -9,30 +8,11 @@
   "packageRules": [
     {
       "matchDepTypes": ["packageManager"],
-      "matchUpdateTypes": ["patch", "minor", "pin", "digest"],
-      "groupName": "packageManager (non-major)",
-      "automerge": true
-    },
-    {
-      "matchDepTypes": ["devDependencies"],
-      "matchUpdateTypes": ["patch", "minor", "pin", "digest"],
-      "groupName": "devDependencies (non-major)",
-      "automerge": true
-    },
-    {
-      "matchDepTypes": ["peerDependencies"],
-      "groupName": "peerDependencies",
-      "rangeStrategy": "update-lockfile"
-    },
-    {
-      "description": "Missing v9 support in typescript-eslint: https://github.com/typescript-eslint/typescript-eslint/issues/8211",
-      "matchPackageNames": ["eslint", "typescript-eslint", "@eslint/js", "eslint-config-prettier", "eslint-plugin-svelte"],
       "enabled": false
     }
   ],
   "lockFileMaintenance": {
-    "enabled": true,
-    "automerge": true
+    "enabled": false
   },
   "nvm": {
     "enabled": false
