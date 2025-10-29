@@ -9,6 +9,10 @@
     {
       "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies", "optionalDependencies"],
       "enabled": false
+    },
+    {
+      "matchDepTypes": ["action"],
+      "automerge": true
     }
   ],
   "lockFileMaintenance": {
